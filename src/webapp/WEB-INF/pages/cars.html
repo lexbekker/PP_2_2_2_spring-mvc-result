@@ -7,13 +7,9 @@
 </head>
 <body>
 <div>
-    <th:block th:each="msg : ${messages}">
-        <h1 th:text="${msg}"></h1>
+    <th:block th:each="car : ${cars}">
+        <h2 th:text="|${car.getBrand()} ${car.getModel()}, ${car.getYear()} year manufactured|"></h2>
     </th:block>
 </div>
-
-<br/>
-<a href="/cars">I want to see the cars</a>
-
 </body>
 </html>
